@@ -46,16 +46,28 @@ header {
   display: flex;
 }
 
+header.fixed {
+  position: fixed;/*fixedを設定して固定*/
+  /* z-index: 999;最前面へ */
+  top:0;/*位置指定*/
+  width: 100%;
+}
+
 header h1 {
-  margin: 0 auto;
-  line-height: normal;
+  /* margin: 0 auto; */
+  line-height: 20px;
   letter-spacing: 5px;
+  margin-right: auto;
 }
 
 .icons {
-  padding: 15px;
+  margin-right: 100px;
+  line-height: 60px;
   display: flex;
-  /* justify-items: flex-end; */
+}
+
+.bi-twitter::before {
+  padding-right: 10px;
 }
 
 /* main */
@@ -75,23 +87,40 @@ main {
 }
 
 section {
-  margin: 30px 20%;
-  padding: 50px auto;
+  margin-left: 100px;
+  padding: auto;
+  padding: 50px;
   border-radius: 20px;
   margin-bottom: 100px;
   border:1px solid #EEE;
   box-shadow:rgba(122, 122, 122, 0.0588235) 0px 0px 6px 3px;
 }
 
+.main-contents {
+  display: flex;
+  margin: 0 auto;
+}
+
 /* sidebar */
 
-.content {
+.top-content {
   display: flex;
-  flex-direction: column;
+  margin-top: 150px;
 }
 
 .sidebar {
+  width: 250px;
+  /* z-index: -1; */
   border: 1px solid #EEE;
+  padding: 0 auto;
+}
+
+.sidebar menu ul li:hover {
+  opacity: .5;
+}
+
+menu ul li + li {
+  margin-top: 30px;
 }
 
 /* footer */
@@ -102,4 +131,8 @@ footer {
   height: 200px;
   display: flex;
   justify-content: flex-end;
+}
+
+footer small {
+  color: #EEE;
 }
