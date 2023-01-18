@@ -1,7 +1,8 @@
 @charset "utf-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-/* common */
 
+/* メインページと共通セクション */
+/* common */
 html {
   font-family: "M PLUS Rounded 1c";
 }
@@ -60,6 +61,10 @@ header h1 {
   margin-right: auto;
 }
 
+header h1:hover {
+  opacity: 0.5;
+}
+
 .icons {
   margin-right: 100px;
   line-height: 60px;
@@ -110,13 +115,14 @@ section {
 
 .sidebar {
   width: 250px;
-  /* z-index: -1; */
-  border: 1px solid #EEE;
+  /* border: 1px solid #EEE; */
   padding: 0 auto;
 }
 
 .sidebar menu ul li:hover {
   opacity: .5;
+  transform: translateY(-10px);
+  transition: 0.5s;
 }
 
 menu ul li + li {
@@ -135,4 +141,25 @@ footer {
 
 footer small {
   color: #EEE;
+}
+
+/* お問い合わせページ */
+.contact div + div {
+  margin-top: 30px;
+}
+
+#button {
+  border-style: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(168, 157, 151);
+}
+
+#button:hover {
+  opacity: .5;
+  transform: translateY(-10px);
+  transition: 0.5s;
 }
