@@ -92,6 +92,7 @@ main {
 }
 
 section {
+  position: absolute;
   margin-left: 100px;
   padding: auto;
   padding: 50px;
@@ -114,6 +115,8 @@ section {
 }
 
 .sidebar {
+  position: absolute;
+  float: left;
   width: 250px;
   /* border: 1px solid #EEE; */
   padding: 0 auto;
