@@ -3,6 +3,7 @@
 :root {
   --main-color: rgb(107,198,196);
   --top-font-color: rgb(81,81,81);
+  --menu-height: 100%;
 }
 
 /* common */
@@ -56,28 +57,91 @@ header {
 
 /* menu */
 .menu {
+  position: left;
+  background-color: var(--main-color);
+  height: var(--menu-height);
+  border-radius: 5px;
+  border: var(--main-color) solid 1px;
+  margin-bottom: 10px;
+}
+
+.menu ul {
   display: flex;
   justify-content: space-around;
-  background-color: var(--main-color);
-  height: 80px;
-  border-radius: 5px;
-  /* border: black solid 1px; */
-  margin-bottom: 10px;
+  
 }
 
 .menu li {
   /* border: black solid 1px; */
+  border-right: black 1px solid;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* main */
 main {
-  border: black solid 1px;
-  height: 200px;
-  display: flex;
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
+
+/* column1 */
+.column1 {
+  width: 30%;
+}
+
+.sideber1,
+.sideber2 {
+  border: black solid 1px;
+  margin-bottom: 10px;
+}
+
+.sideber1 > ul li::before {
+  list-style-type: square;
+  transform:rotate(-45deg);
+}
+
+/* columun2 */
+.column2 {
+  margin-left: 10px;
+  width: 70%;
+}
+
 /* footer */
 footer {
-  border: black solid 1px;
-  height: 200px;
+  /* border: black solid 1px; */
+  height: 100%;
+  margin-top: 10px;
 }
+
+.footermenu .menu ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+#footerborder {
+  width: 100%;
+  border: var(--main-color) solid 1px;
+}
+
+footer .address {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+  font-size: 12px;
+}
+
+footer div small {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
