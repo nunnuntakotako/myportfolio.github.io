@@ -48,9 +48,8 @@ header {
 }
 
 header.fixed {
-  position: fixed;/*fixedを設定して固定*/
-  /* z-index: 999;最前面へ */
-  top:0;/*位置指定*/
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -96,7 +95,6 @@ main {
 }
 
 section {
-  /* position: absolute; */
   margin-left: 100px;
   padding: auto;
   padding: 50px;
@@ -150,8 +148,33 @@ footer small {
 
 /* スマホ用画面 */
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
   .sidebar {
     display: none;
+  }
+
+  header h1 {
+    line-height: 20px;
+    letter-spacing: 3px;
+    margin-right: auto;
+    font-size: 25px;
+  }
+
+  body {
+    width: 80%;
+  }
+
+  .container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  section {
+    margin-left: 10px;
+    width: 80%;
+  }
+
+  footer {
+    width: 100%;
   }
 }
