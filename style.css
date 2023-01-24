@@ -71,6 +71,11 @@ header h1:hover {
   display: flex;
 }
 
+.bi-twitter:hover,
+.bi-github:hover {
+  opacity: .5;
+}
+
 .bi-twitter::before {
   padding-right: 10px;
 }
@@ -92,7 +97,7 @@ main {
 }
 
 section {
-  position: absolute;
+  /* position: absolute; */
   margin-left: 100px;
   padding: auto;
   padding: 50px;
@@ -115,10 +120,9 @@ section {
 }
 
 .sidebar {
-  position: absolute;
+  /* position: absolute; */
   float: left;
   width: 250px;
-  /* border: 1px solid #EEE; */
   padding: 0 auto;
 }
 
