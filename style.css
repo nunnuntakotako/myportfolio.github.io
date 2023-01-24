@@ -55,7 +55,6 @@ header.fixed {
 }
 
 header h1 {
-  /* margin: 0 auto; */
   line-height: 20px;
   letter-spacing: 5px;
   margin-right: auto;
@@ -120,7 +119,6 @@ section {
 }
 
 .sidebar {
-  /* position: absolute; */
   float: left;
   width: 250px;
   padding: 0 auto;
@@ -150,23 +148,10 @@ footer small {
   color: #EEE;
 }
 
-/* お問い合わせページ */
-.contact div + div {
-  margin-top: 30px;
-}
+/* スマホ用画面 */
 
-#button {
-  border-style: none;
-  border-radius: 5px;
-  font-size: 20px;
-  margin-top: 30px;
-  padding: 10px;
-  text-align: center;
-  background-color: rgba(168, 157, 151);
-}
-
-#button:hover {
-  opacity: .5;
-  transform: translateY(-10px);
-  transition: 0.5s;
+@media screen and (max-width:400px) {
+  .sidebar {
+    display: none;
+  }
 }
