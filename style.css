@@ -54,9 +54,17 @@ header.fixed {
 }
 
 header h1 {
-  line-height: 20px;
+  line-height: 10px;
   letter-spacing: 5px;
   margin-right: auto;
+}
+
+header h1 a {
+  display: flex;
+}
+
+header h1 a p {
+  margin-left: 50px;
 }
 
 header h1:hover {
@@ -113,7 +121,7 @@ section {
 
 .top-content {
   display: flex;
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 .sidebar {
@@ -148,13 +156,41 @@ footer small {
 
 /* スマホ用画面 */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:375px) {
+  /* common */
+
+  body {
+    font-size: 10px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  /* セクションごと */
+  header h1 a {
+    display: inline-block;
+  }
+  
+  header h1 a p {
+    margin-left: 10px;
+  }
+
+  .top-content {
+    display: flex;
+    margin-top: 180px;
+  }
+
   .sidebar {
     display: none;
   }
 
   header h1 {
-    line-height: 20px;
+    line-height: 10px;
     letter-spacing: 3px;
     margin-right: auto;
     font-size: 25px;
@@ -175,6 +211,19 @@ footer small {
   }
 
   footer {
-    width: 100%;
+    width: 375px;
+    padding: 10px;
+    position: static;
+    top: 40px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  /* .sidebar menu ul li a{
+    font-size: 15px;
+  } */
+
+  .sidebar {
+    display: none;
   }
 }
