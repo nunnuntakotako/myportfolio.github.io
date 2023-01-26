@@ -48,17 +48,23 @@ header {
 }
 
 header.fixed {
-  position: fixed;/*fixedを設定して固定*/
-  /* z-index: 999;最前面へ */
-  top:0;/*位置指定*/
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
 header h1 {
-  /* margin: 0 auto; */
-  line-height: 20px;
+  line-height: 10px;
   letter-spacing: 5px;
   margin-right: auto;
+}
+
+header h1 a {
+  display: flex;
+}
+
+header h1 a p {
+  margin-left: 50px;
 }
 
 header h1:hover {
@@ -97,7 +103,6 @@ main {
 }
 
 section {
-  /* position: absolute; */
   margin-left: 100px;
   padding: auto;
   padding: 50px;
@@ -116,11 +121,10 @@ section {
 
 .top-content {
   display: flex;
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 .sidebar {
-  /* position: absolute; */
   float: left;
   width: 250px;
   padding: 0 auto;
@@ -150,23 +154,76 @@ footer small {
   color: #EEE;
 }
 
-/* お問い合わせページ */
-.contact div + div {
-  margin-top: 30px;
+/* スマホ用画面 */
+
+@media screen and (max-width:375px) {
+  /* common */
+
+  body {
+    font-size: 10px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  /* セクションごと */
+  header h1 a {
+    display: inline-block;
+  }
+  
+  header h1 a p {
+    margin-left: 10px;
+  }
+
+  .top-content {
+    display: flex;
+    margin-top: 180px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  header h1 {
+    line-height: 10px;
+    letter-spacing: 3px;
+    margin-right: auto;
+    font-size: 25px;
+  }
+
+  body {
+    width: 80%;
+  }
+
+  .container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  section {
+    margin-left: 10px;
+    width: 80%;
+  }
+
+  footer {
+    width: 375px;
+    padding: 10px;
+    position: static;
+    top: 40px;
+  }
 }
 
-#button {
-  border-style: none;
-  border-radius: 5px;
-  font-size: 20px;
-  margin-top: 30px;
-  padding: 10px;
-  text-align: center;
-  background-color: rgba(168, 157, 151);
-}
+@media screen and (max-width:1000px) {
+  /* .sidebar menu ul li a{
+    font-size: 15px;
+  } */
 
-#button:hover {
-  opacity: .5;
-  transform: translateY(-10px);
-  transition: 0.5s;
+  .sidebar {
+    display: none;
+  }
 }
