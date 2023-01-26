@@ -71,6 +71,10 @@ header h1:hover {
   opacity: 0.5;
 }
 
+.top-menu {
+  display: none;
+}
+
 .icons {
   margin-right: 100px;
   line-height: 60px;
@@ -225,5 +229,11 @@ footer small {
 
   .sidebar {
     display: none;
+  }
+
+  .top-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
