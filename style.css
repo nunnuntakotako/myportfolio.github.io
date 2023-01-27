@@ -179,9 +179,13 @@ footer small {
   header h1 a {
     display: inline-block;
   }
-  
+
   header h1 a p {
     margin-left: 10px;
+  }
+
+  .top-menu {
+    display: none;
   }
 
   .top-content {
