@@ -75,21 +75,6 @@ header h1:hover {
   display: none;
 }
 
-.icons {
-  margin-right: 100px;
-  line-height: 60px;
-  display: flex;
-}
-
-.bi-twitter:hover,
-.bi-github:hover {
-  opacity: .5;
-}
-
-.bi-twitter::before {
-  padding-right: 10px;
-}
-
 /* main */
 .container img {
   display: flex;
@@ -151,10 +136,23 @@ footer {
   padding: 30px;
   height: 200px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 footer small {
   color: #EEE;
+}
+
+.icons {
+  display: flex;
+}
+
+.bi-twitter:hover,
+.bi-github:hover {
+  opacity: .5;
+}
+
+.bi-twitter::before {
+  padding-right: 10px;
 }
 
