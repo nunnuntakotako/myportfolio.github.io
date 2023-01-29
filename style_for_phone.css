@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* スマホ用画面 */
+@media screen and (max-width:375px) {
+  /* common */
+
+  body {
+    font-size: 10px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  /* セクションごと */
+  header h1 a {
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  header h1 a p {
+    margin-left: 10px;
+  }
+
+  .top-menu {
+    display: none;
+  }
+
+  .top-content {
+    display: flex;
+    margin-top: 180px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  header h1 {
+    line-height: 10px;
+    letter-spacing: 3px;
+    margin-right: auto;
+    font-size: 25px;
+  }
+
+  body {
+    width: 80%;
+  }
+
+  .container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  section {
+    margin-left: 10px;
+    width: 80%;
+  }
+
+  footer {
+    width: 375px;
+    padding: 10px;
+    position: static;
+    top: 40px;
+  }
+}
