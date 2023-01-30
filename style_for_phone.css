@@ -17,34 +17,49 @@
   }
 
   /* セクションごと */
+  header {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  header h1 {
+    align-items: center;
+    line-height: 10px;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+
   header h1 a {
     display: inline-block;
     font-size: 20px;
+    margin: 0;
   }
 
-  header h1 a p {
-    margin-left: 10px;
+  header h1 p {
+    display: block;
+    margin-top: 10;
+    margin-left: 0;
   }
 
-  .top-menu {
-    display: none;
+  header #open {
+    width: 100%;
+    line-height: 60px;
   }
 
   .top-content {
     display: flex;
-    margin-top: 180px;
+  }
+
+  section {
+    margin-top: 20px;
   }
 
   .sidebar {
     display: none;
   }
 
-  header h1 {
-    line-height: 10px;
-    letter-spacing: 3px;
-    margin-right: auto;
-    font-size: 25px;
-  }
+
 
   body {
     width: 80%;

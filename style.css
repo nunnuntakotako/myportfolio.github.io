@@ -41,13 +41,13 @@ a:hover {
 
 /* header */
 header {
-  background-color: rgba(168, 157, 151);
+  background-color: rgba(168, 157, 151,0.5);
   margin: 0;
   padding: 30px;
-  display: flex;
+  display: inline-flex;
 }
 
-header.fixed {
+header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -71,7 +71,11 @@ header h1:hover {
   opacity: 0.5;
 }
 
-.top-menu {
+span #open {
+  display: none;
+}
+
+.overlay {
   display: none;
 }
 
