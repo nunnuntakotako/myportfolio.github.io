@@ -41,13 +41,13 @@ a:hover {
 
 /* header */
 header {
-  background-color: rgba(168, 157, 151);
+  background-color: rgba(168, 157, 151,0.5);
   margin: 0;
   padding: 30px;
-  display: flex;
+  display: inline-flex;
 }
 
-header.fixed {
+header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -71,23 +71,12 @@ header h1:hover {
   opacity: 0.5;
 }
 
-.top-menu {
+span #open {
   display: none;
 }
 
-.icons {
-  margin-right: 100px;
-  line-height: 60px;
-  display: flex;
-}
-
-.bi-twitter:hover,
-.bi-github:hover {
-  opacity: .5;
-}
-
-.bi-twitter::before {
-  padding-right: 10px;
+.overlay {
+  display: none;
 }
 
 /* main */
@@ -151,10 +140,23 @@ footer {
   padding: 30px;
   height: 200px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 footer small {
   color: #EEE;
+}
+
+.icons {
+  display: flex;
+}
+
+.bi-twitter:hover,
+.bi-github:hover {
+  opacity: .5;
+}
+
+.bi-twitter::before {
+  padding-right: 10px;
 }
 
