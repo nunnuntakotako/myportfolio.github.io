@@ -3,9 +3,16 @@
 /* スマホ用画面 */
 @media screen and (max-width:375px) {
   /* common */
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
 
   body {
     font-size: 10px;
+    margin: 0;
+    padding: 0;
   }
 
   li {
@@ -20,11 +27,10 @@
   header {
     margin: 0;
     padding: 0;
-    display: inline-block;
+    text-align: center;
   }
 
   header h1 {
-    align-items: center;
     line-height: 10px;
     letter-spacing: 3px;
     font-size: 25px;
@@ -36,30 +42,46 @@
     margin: 0;
   }
 
-  header h1 p {
+  header > h1 > a > p {
     display: block;
     margin-top: 10;
     margin-left: 0;
   }
 
-  header #open {
-    width: 100%;
-    line-height: 60px;
+  span#open.material-symbols-outlined {
+    padding: 0;
+    margin: 0;
   }
 
   .top-content {
-    display: flex;
+    margin-top: 180px;
+    width: 100vw;
+  }
+
+  /* main部分 */
+  main {
+    width: 100%;
+  }
+
+  .main_content {
+    width: 100%;
   }
 
   section {
-    margin-top: 20px;
+    margin-left: 0px;
+    width: 100vw;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  section ul {
+    margin: 0px;
+    padding: 10px;
   }
 
   .sidebar {
     display: none;
   }
-
-
 
   body {
     width: 80%;
@@ -70,15 +92,10 @@
     height: 200px;
   }
 
-  section {
-    margin-left: 10px;
-    width: 80%;
-  }
-
   footer {
-    width: 375px;
-    padding: 10px;
-    position: static;
-    top: 40px;
+    width: 100vw;
+    margin: 0;
+    padding: 20px;
+    display: flex;
   }
 }
