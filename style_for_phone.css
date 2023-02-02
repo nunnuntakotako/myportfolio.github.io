@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* スマホ用画面 */
-@media screen and (max-width:375px) {
+@media screen and (max-width:390px) {
   /* common */
   html {
     margin: 0;
@@ -51,6 +51,12 @@
   span#open.material-symbols-outlined {
     padding: 0;
     margin: 0;
+  }
+
+  .sp-menu {
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 20px;
   }
 
   .top-content {
