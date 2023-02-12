@@ -4,32 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お問い合わせ</title>
+  <title>Hiraoka Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_for_tablet.css">
+  <link rel="stylesheet" href="css/style_for_phone.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-  <header class="fixed">
-    <h1><a href="#">Hiraoka Portfolio</a></h1>
-      <div class="top-menu">
-        <nav>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="icons">
-        <a href=""><i class="bi bi-twitter"></i></a>
-        <a href=""><i class="bi bi-github"></i></a>
-      </div>
+  <header>
+    <h1><a href="#"><p>Hiraoka</p><p>Portfolio</p></a></h1>
+    <div class="sp-menu">
+      <span class="material-symbols-outlined" id="open">menu</span>
+    </div>
   </header>
-
+  <div class="overlay">
+    <span class="material-symbols-outlined" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="#"></a>制作物</a></li>
+        <li><a href="#">ライティング</a></li>
+        <li><a href="./skills.html">資格</a></li>
+        <li><a href="./contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
   <main>
     <div class="top-content">
       <div class="sidebar">
@@ -37,40 +38,41 @@
           <ul>
             <li><a href="#">制作物</a></li>
             <li><a href="#">ライティング</a></li>
-            <li><a href="#">資格</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="./skills.html">資格</a></li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
           </ul>
         </menu>
       </div>
 
       <div class="main-content">
-          <h1>制作物</h1>
-          <section>
-            <div class="container">
-              <h2>パン屋のサイト</h2>
-            </div>
-          </section>
-          <section>
-            <div class="container">
-              <h2>コーヒー店のサイト</h2>
-            </div>
-          </section>
-          <section>
-            <div class="container">
-              <h2>ネイルサロンのサイト</h2>
-            </div>
-          </section>
-          <section>
-            <div class="container">
-              <h2>コンサルタントのサイト</h2>
-            </div>
-          </section>MOSY
+        <section>
+          <div class="container">
+            <h2>パン屋</h2>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <h2>ネイルサロン</h2>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <h2>制作物</h2>
+          </div>
+        </section>
       </div>
+
     </div>
   </main>
-
   <footer>
+    <div class="icons">
+      <a href=""><i class="bi bi-twitter"></i></a>
+      <a href="https://github.com/nunnuntakotako"><i class="bi bi-github"></i></a>
+    </div>
     <small>(c) nunnuntakotako.com</small>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
